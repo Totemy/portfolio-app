@@ -1,5 +1,6 @@
 <template>
   <div>
+    <button>ihor-stryzhnov</button>
     <button>
       _hello
     </button>
@@ -8,6 +9,9 @@
     </button>
     <button>
       _projects
+    </button>
+    <button>
+      _contact-me
     </button>
   </div>
 </template>
