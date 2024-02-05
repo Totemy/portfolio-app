@@ -1,5 +1,6 @@
 .main{
   display: flex;
+  justify-content: space-around;
   &__article{
 
   }
@@ -7,8 +8,8 @@
 
   }
   &__img{
-    width: 500px;
-    height: 800px;
-
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
   }
 }
