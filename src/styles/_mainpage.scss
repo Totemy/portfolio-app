@@ -1,8 +1,14 @@
 .main{
+  display: flex;
   &__article{
 
   }
   &__text{
+
+  }
+  &__img{
+    width: 500px;
+    height: 800px;
 
   }
 }

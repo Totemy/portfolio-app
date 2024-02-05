@@ -1,18 +1,19 @@
 <template>
-  <div>
-    <button>ihor-stryzhnov</button>
-    <button>
+  <div class="navbar">
+    <div class="navbar__item">ihor-stryzhnov</div>
+    <div  class="navbar__item">
       _hello
-    </button>
-    <button>
+    </div>
+    <div  class="navbar__item">
       _about-me
-    </button>
-    <button>
+    </div>
+    <div  class="navbar__item">
       _projects
-    </button>
-    <button>
+    </div>
+
+    <div  class="navbar__item">
       _contact-me
-    </button>
+    </div>
   </div>
 </template>
 <script>

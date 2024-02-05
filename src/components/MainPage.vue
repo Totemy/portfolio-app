@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <div class="main__article">
       <h4>Hi all. I am</h4>
       <h2>Ihor Stryzhnov</h2>
@@ -11,7 +11,7 @@
       <p>const githubLink = “https://github.com/Totemy”</p>
     </div>
     <div class="main__profile">
-      <img src="/main/profile.jpg">
+      <img class="main__img" src="/main/profile.jpg">
     </div>
   </div>
 </template>

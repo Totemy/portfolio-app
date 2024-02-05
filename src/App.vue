@@ -1,6 +1,9 @@
 <template>
-  <NavbarPage/>
-  <MainPage/>
+  <div class="container">
+    <NavbarPage/>
+    <MainPage/>
+  </div>
+
 </template>
 
 <script>
