@@ -1,21 +1,21 @@
 <template>
   <div class="container">
     <NavbarPage/>
-    <MainPage/>
+    <div class="content">
+      <router-view/>
+    </div>
     <FooterPage/>
   </div>
 
 </template>
 
 <script>
-import MainPage from "@/components/MainPage.vue";
 import NavbarPage from "@/components/NavbarPage.vue";
 import FooterPage from "@/components/FooterPage.vue";
 export default {
   name: 'App',
   components: {
     NavbarPage,
-    MainPage,
     FooterPage
   }
 }
