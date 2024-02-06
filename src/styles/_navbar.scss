@@ -1,0 +1,19 @@
+.navbar{
+  display: flex;
+  border-bottom: solid 1px $stroke;
+  color: $nav-font-color;
+  &__item{
+    padding: 17px 32px;
+    border-right: solid 1px $stroke;
+    &:last-child{
+      position: absolute;
+      border-left: solid 1px $stroke;
+      border-right: 0px;
+      right: 20px;
+    }
+  }
+  a{
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}

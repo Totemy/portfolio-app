@@ -1,0 +1,23 @@
+body{
+  background-color: $background;
+  color: $text-color;
+  font-family: 'Fira Code', monospace;
+}
+.container{
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: solid 1px $stroke;
+  border-radius: 10px;
+  height: 830px;
+}
+.content{
+  height: 100%;
+  scroll-behavior: smooth;
+
+}
+a{
+  text-decoration: none;
+  color: $text-color;
+}
