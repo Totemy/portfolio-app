@@ -1,18 +1,42 @@
 .main{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  h2{
+    font-size: 62px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  h3{
+
+  }
   &__article{
 
   }
   &__text{
     color: #607B96;
-    a{
-      text-decoration: none;
-    }
+    font-size: 16px;
+
   }
   &__img{
     width: 400px;
-    height: 400px;
-    overflow: hidden;
+    height: 480px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url('/src/assets/img/main-page/blur.svg');
+      background-size: cover;
+      backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+      z-index: -1; /* Ensure it's behind the image */
+    }
   }
 }
