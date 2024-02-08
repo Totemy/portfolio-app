@@ -26,6 +26,7 @@
     object-fit: cover;
     position: relative;
     display: block;
+    border-radius: 8px;
     &:before{
       position: absolute;
       content: '';
@@ -33,7 +34,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-image: url('/src/assets/img/main-page/blur.svg');
+      background-image: url('/src/assets/img/main/background.png');
       background-size: cover;
       backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
       z-index: -1; /* Ensure it's behind the image */

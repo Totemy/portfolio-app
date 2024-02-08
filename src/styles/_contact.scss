@@ -1,0 +1,25 @@
+.contact-me{
+  display: flex;
+  height: 100%;
+  &__sidebar{
+    border-right: 1px solid $stroke;
+    min-width: 240px;
+  }
+  &__tab{
+    width: 100%;
+    overflow: hidden;
+  }
+  &__input{
+    padding: 10px;
+    background-color: #011221;
+    border: 1px solid #1E2D3D;
+    border-radius: 8px;
+  }
+  &__button{
+    margin-top: 20px;
+  }
+  &__code{
+    margin-top: 40px;
+
+  }
+}

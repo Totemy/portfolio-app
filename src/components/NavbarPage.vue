@@ -13,7 +13,7 @@
     </div>
 
     <div  class="navbar__item">
-      _contact-me
+      <router-link to="/contact-me">  _contact-me</router-link>
     </div>
   </div>
 </template>

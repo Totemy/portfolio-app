@@ -10,6 +10,7 @@
   &__item{
     padding: 1px 1px 1px 5px;
     position: relative;
+    cursor: pointer;
     &:before{
       content: url("/src/assets/img/main/markdown.svg");
       display: block;
@@ -22,6 +23,7 @@
     padding: 5px 5px 5px 25px;
   }
   &__header{
+    cursor: pointer;
     font-weight: bold;
     border-bottom: 1px solid $stroke;
     padding: 5px 5px 5px 25px;
@@ -43,10 +45,11 @@
     border-bottom: 1px solid $stroke;
   }
   &__item{
-    padding: 4px 25px;
+    padding: 5px 45px 5px 25px;
     color: $nav-font-color;
     border-right: 1px solid $stroke;
     position: relative;
+    cursor: pointer;
     &:before{
       content: url("/src/assets/img/main/markdown.svg");
       display: block;
@@ -66,6 +69,7 @@
     padding: 5px 20px 5px 20px;
     border-right: 1px solid $stroke;
     height: 100%;
+    min-width: 500px;
   }
   &__objects{
     display: flex;
