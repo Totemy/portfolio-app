@@ -10,7 +10,7 @@
       <div @click="toggleItems(2)"  class="sidebar__header">contacts</div>
       <div class="sidebar__contacts">
         <div v-show="showItems[2]" class="sidebar__items">
-          ihor.stryzhov@gmail.com
+          ihor.stryzhov@gmail.com <br/>
           +380 98 202 44 17
         </div>
      </div>

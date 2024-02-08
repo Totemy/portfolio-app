@@ -20,6 +20,7 @@
 }
 .tab{
   width: 100%;
+  overflow: hidden;
   &__items{
     display: flex;
     border-bottom: 1px solid $stroke;
@@ -36,5 +37,6 @@
   }
   &__objects{
     display: flex;
+    height: 100%;
   }
 }
