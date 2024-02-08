@@ -1,0 +1,25 @@
+.projects{
+  &__header{
+
+  }
+  &__items{
+    display: flex;
+  }
+  &__item{
+    margin: 50px;
+  }
+  &__item-body{
+    padding: 20px;
+  }
+  &__card-body{
+    width: 500px;
+    height: 400px;
+    border: 1px solid $stroke;
+    border-radius: 15px;
+    background-color: #011221;
+    overflow: hidden;
+  }
+  &__item-img{
+    width: 100%
+  }
+}
