@@ -1,0 +1,40 @@
+.about{
+  display: flex;
+  height: 100%;
+  &__sidebar{
+    border-right: 1px solid $stroke;
+    min-width: 240px;
+  }
+}
+.sidebar{
+  &__items{
+    border-bottom: 1px solid $stroke;
+    padding: 5px 5px 5px 25px;
+  }
+  &__header{
+    font-weight: bold;
+    border-bottom: 1px solid $stroke;
+    padding: 5px;
+
+  }
+}
+.tab{
+  width: 100%;
+  &__items{
+    display: flex;
+    border-bottom: 1px solid $stroke;
+  }
+  &__item{
+    padding: 4px;
+    color: $nav-font-color;
+    border-right: 1px solid $stroke;
+  }
+  &__object{
+    padding: 5px 20px 5px 20px;
+    border-right: 1px solid $stroke;
+    height: 100%;
+  }
+  &__objects{
+    display: flex;
+  }
+}

@@ -1,6 +1,7 @@
 <template>
   <div class="navbar">
-    <div class="navbar__item">ihor-stryzhnov</div>
+    <div class="navbar__item">
+      <router-link to="/"> ihor-stryzhnov</router-link></div>
     <div  class="navbar__item">
       <router-link to="/"> _hello</router-link>
     </div>

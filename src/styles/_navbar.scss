@@ -5,6 +5,9 @@
   &__item{
     padding: 17px 32px;
     border-right: solid 1px $stroke;
+    &:first-child{
+      min-width: 176px;
+    }
     &:last-child{
       position: absolute;
       border-left: solid 1px $stroke;
