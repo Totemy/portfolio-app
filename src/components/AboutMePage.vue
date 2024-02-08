@@ -17,17 +17,14 @@
     </div>
     <div class="tab">
       <div class="tab__items">
-        <div class="tab__item" v-show="showItems[3]">
+        <div class="tab__item" v-show="showItems[3]" @click="toggleItems(3)">
           bio
-          <button @click="toggleItems(3)">x</button>
         </div>
-        <div class="tab__item"  v-show="showItems[4]">
+        <div class="tab__item"  v-show="showItems[4]" @click="toggleItems(4)">
           interests
-          <button @click="toggleItems(4)">x</button>
         </div>
-        <div class="tab__item"  v-show="showItems[5]">
+        <div class="tab__item"  v-show="showItems[5]" @click="toggleItems(5)">
           education
-          <button @click="toggleItems(5)">x</button>
         </div>
       </div>
       <div class="tab__objects">

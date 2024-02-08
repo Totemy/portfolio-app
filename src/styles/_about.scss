@@ -7,6 +7,16 @@
   }
 }
 .sidebar{
+  &__item{
+    padding: 1px 1px 1px 5px;
+    position: relative;
+    &:before{
+      content: url("/src/assets/img/main/markdown.svg");
+      display: block;
+      position: absolute;
+      left: -20px;
+    }
+  }
   &__items{
     border-bottom: 1px solid $stroke;
     padding: 5px 5px 5px 25px;
@@ -14,7 +24,14 @@
   &__header{
     font-weight: bold;
     border-bottom: 1px solid $stroke;
-    padding: 5px;
+    padding: 5px 5px 5px 25px;
+    position: relative;
+    &:before{
+      content: url("/src/assets/img/main/down-arrow.svg");
+      display: block;
+      position: absolute;
+      left: 6px;
+    }
 
   }
 }
@@ -26,9 +43,24 @@
     border-bottom: 1px solid $stroke;
   }
   &__item{
-    padding: 4px;
+    padding: 4px 25px;
     color: $nav-font-color;
     border-right: 1px solid $stroke;
+    position: relative;
+    &:before{
+      content: url("/src/assets/img/main/markdown.svg");
+      display: block;
+      position: absolute;
+      left: 3px;
+      top: 6px;
+    }
+    &:after{
+      content: url("/src/assets/img/main/exit.svg");
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 6px;;
+    }
   }
   &__object{
     padding: 5px 20px 5px 20px;
