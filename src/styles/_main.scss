@@ -2,6 +2,7 @@ body{
   background-color: $background;
   color: $text-color;
   font-family: 'Fira Code', monospace;
+  overflow-x: hidden;
 }
 .container{
   background-color: $main-color;
