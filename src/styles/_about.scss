@@ -21,6 +21,7 @@
   &__items{
     border-bottom: 1px solid $stroke;
     padding: 5px 5px 5px 25px;
+    position: relative;
   }
   &__header{
     cursor: pointer;
@@ -35,6 +36,24 @@
       left: 6px;
     }
 
+  }
+  &__phone{
+    padding: 5px;
+    &:before{
+      content: url("/src/assets/img/main/phone.svg");
+      display: block;
+      position: absolute;
+      left: 6px;
+    }
+  }
+  &__mail{
+    padding: 5px;
+    &:before{
+      content: url("/src/assets/img/main/mail.svg");
+      display: block;
+      position: absolute;
+      left: 6px;
+    }
   }
 }
 .tab{

@@ -10,8 +10,13 @@
       <div @click="toggleItems(2)"  class="sidebar__header">contacts</div>
       <div class="sidebar__contacts">
         <div v-show="showItems[2]" class="sidebar__items">
-          ihor.stryzhov@gmail.com <br/>
-          +380 98 202 44 17
+          <div class="sidebar__mail">
+            ihor.stryzhov@gmail.com
+          </div>
+          <div class="sidebar__phone">
+            +380 98 202 44 17
+          </div>
+
         </div>
      </div>
     </div>
@@ -30,62 +35,40 @@
       <div class="tab__objects">
         <div class="tab__object" v-show="showItems[3]">
           <p>
-            /** <br/>
-            * About me <br/>
-            * I have 5 years of еxperience in web <br/>
-            * development lorem ipsum dolor sit amet, <br/>
-            * consectetur adipiscing elit, sed do eiusmod <br/>
-            * tempor incididunt ut labore et dolore <br/>
-            * magna aliqua. Ut enim ad minim veniam, <br/>
-            * quis nostrud exercitation ullamco laboris <br/>
-            * nisi ut aliquip ex ea commodo consequat. <br/>
-            * Duis aute irure dolor in reprehenderit in <br/>
-            * <br/>
-            * Duis aute irure dolor in reprehenderit in <br/>
-            * voluptate velit esse cillum dolore eu fugiat <br/>
-            * nulla pariatur. Excepteur sint occaecat <br/>
-            * officia deserunt mollit anim id est laborum. <br/>
-            */
+            As a front-end developer with one year of experience in outsourcing, <br>
+            I specialize in delivering high-quality web solutions. <br>
+            In my recent role, I focused on supporting CRUD operations and database services, <br>
+            and I gained proficiency in using Cypress for testing purposes.  <br>
+            One of my notable projects involved creating an e-commerce <br>
+            platform using Vue.js integrated with Firebase, demonstrating my ability to build robust <br>
+            and scalable web applications.<br>
+            <br>
+            I have a strong foundation in front-end development, <br>
+            with expertise in crafting pixel-perfect HTML and SCSS c<br>
+            ode for mobile and desktop platforms. My experience extends <br>
+            to working with both custom SCSS styles and Bootstrap framework,<br>
+            allowing me to adapt to various project requirements efficiently.<br>
           </p>
         </div>
         <div class="tab__object"  v-show="showItems[4]">
           <p>
-            /** <br/>
-            * About me <br/>
-            * I have 5 years of еxperience in web <br/>
-            * development lorem ipsum dolor sit amet, <br/>
-            * consectetur adipiscing elit, sed do eiusmod <br/>
-            * tempor incididunt ut labore et dolore <br/>
-            * magna aliqua. Ut enim ad minim veniam, <br/>
-            * quis nostrud exercitation ullamco laboris <br/>
-            * nisi ut aliquip ex ea commodo consequat. <br/>
-            * Duis aute irure dolor in reprehenderit in <br/>
-            * <br/>
-            * Duis aute irure dolor in reprehenderit in <br/>
-            * voluptate velit esse cillum dolore eu fugiat <br/>
-            * nulla pariatur. Excepteur sint occaecat <br/>
-            * officia deserunt mollit anim id est laborum. <br/>
-            */
+           my interests
           </p>
         </div>
         <div class="tab__object"  v-show="showItems[5]">
           <p>
-            /** <br/>
-            * About me <br/>
-            * I have 5 years of еxperience in web <br/>
-            * development lorem ipsum dolor sit amet, <br/>
-            * consectetur adipiscing elit, sed do eiusmod <br/>
-            * tempor incididunt ut labore et dolore <br/>
-            * magna aliqua. Ut enim ad minim veniam, <br/>
-            * quis nostrud exercitation ullamco laboris <br/>
-            * nisi ut aliquip ex ea commodo consequat. <br/>
-            * Duis aute irure dolor in reprehenderit in <br/>
-            * <br/>
-            * Duis aute irure dolor in reprehenderit in <br/>
-            * voluptate velit esse cillum dolore eu fugiat <br/>
-            * nulla pariatur. Excepteur sint occaecat <br/>
-            * officia deserunt mollit anim id est laborum. <br/>
-            */
+            Academic History <br>
+            <br>
+            JUNIOR SPECIALIST`S DIPLOMA – Drogobych Mechanical
+            technological college
+            <br>
+            01/09/2014 – 30/05/2018 – Drogobych, Ukraine
+            <br>
+            <br>
+            BACHELOR`S DIPLOMA – Drohobych Ivan Franko State Pedagogical
+            University<br>
+            <br>
+            01/09/2018 – 30/06/2020 – Drogobych, Ukraine
           </p>
         </div>
       </div>
