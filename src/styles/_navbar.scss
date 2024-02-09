@@ -12,11 +12,15 @@
       position: absolute;
       border-left: solid 1px $stroke;
       border-right: 0px;
-      right: 20px;
+      right: 28px;
     }
+  }
+  .active {
+    border-bottom: 2px solid #FEA55F;
   }
   a{
     color: $nav-font-color;
     text-decoration: none;
+    padding: 20px;
   }
 }
