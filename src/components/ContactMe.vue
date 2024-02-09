@@ -5,10 +5,10 @@
         contact-me
       </div>
       <div class="sidebar__items">
-        <div class="sidebar__items-mail">
+        <div class="sidebar__mail">
           ihor.stryzhov@gmail.com
         </div>
-        <div class="sidebar__items-phone">
+        <div class="sidebar__phone">
           +380 98 202 44 17
         </div>
       </div>
@@ -37,21 +37,21 @@
             <textarea class="contact-me__input"  id="massage"  v-model="massage" name="massage" @input="handleInputChange" rows="4" cols="50" placeholder="Some text"></textarea>
           </div>
           <div class="contact-me__button">
-            <button class="btn">submit-message</button>
+            <button class="btn" @click="sendEmail">submit-message</button>
           </div>
         </div>
         <div class="tab__object">
           <div class="contact-me__code">
-            const button = document.querySelector('#sendBtn'); <br/>
+            <span style="color: #C98BDF"> const </span> button <span style="color: #C98BDF"> = </span> document.querySelector(<span style="color: #FEA55F">'#sendBtn'</span>); <br/>
             <br/>
-            const message = {<br/>
-            name: "Jonathan Davis",<br/>
-            email: "",<br/>
-            message: "",<br/>
-            date: "Thu 21 Apr"<br/>
+            <span style="color: #C98BDF"> const </span> message <span style="color: #C98BDF"> = </span> {<br/>
+            name: <span style="color: #FEA55F"> "{{name}}",</span> <br/>
+            email: <span style="color: #FEA55F"> "{{email}}"</span> ,<br/>
+            message: <span style="color: #FEA55F">"{{massage}}" </span> ,<br/>
+            date: <span style="color: #FEA55F">"{{ formatDate(date) }}" </span> <br/>
             }<br/>
             <br/>
-            button.addEventListener('click', () => {<br/>
+            button.addEventListener(<span style="color: #FEA55F"> 'click'</span> , () <span style="color: #C98BDF">=> </span> {<br/>
             form.send(message);<br/>
             })<br/>
           </div>
@@ -62,13 +62,36 @@
   </div>
 </template>
 <script>
+import { sendEmail } from '@/services/EmailService';
 export default {
   data(){
     return{
       name: '',
       email: '',
       massage: '',
+      date: new Date()
     }
+  },
+  methods: {
+    formatDate(dateString) {
+      const options = { day: 'numeric', month: 'short', year: 'numeric' };
+      const date = new Date(dateString);
+      return date.toLocaleDateString('en-GB', options);
+    },
+    async sendEmail() {
+      const templateParams = {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      };
+
+      try {
+        const response = await sendEmail(templateParams);
+        console.log('Email sent successfully:', response);
+      } catch (error) {
+        console.error('Failed to send email:', error);
+      }
+    },
   }
 }
 </script>
