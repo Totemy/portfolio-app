@@ -1,7 +1,12 @@
 .navbar{
-  display: flex;
-  border-bottom: solid 1px $stroke;
-  color: $nav-font-color;
+  &__items{
+    display: flex;
+    border-bottom: solid 1px $stroke;
+    color: $nav-font-color;
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+  }
   &__item{
     padding: 17px 32px;
     border-right: solid 1px $stroke;
@@ -15,6 +20,49 @@
       right: 28px;
     }
   }
+  &__mobile{
+    display: none;
+    border-bottom: 1px solid $stroke;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      padding: 17px 32px;
+      border-right: solid 1px $stroke;
+      justify-content: space-between;
+    }
+    &__logo{
+      font-size: 24px;
+      color: #607B96;
+    }
+    &__item{
+      font-size: 24px;
+      border-bottom: 1px solid $stroke;
+      padding: 20px 14px;
+      color: $text-color;
+    }
+    &__burger{
+      display: none;
+      flex-direction: column;
+      @media only screen and (max-width: 768px) {
+        display: flex;
+      }
+    }
+    &__list{
+      display: none;
+      font-size: 16px;
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        color: $main-color;
+      }
+    }
+    .bar{
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 3px 0;
+      border: 0.5px solid $stroke;
+    }
+  }
   .active {
     border-bottom: 2px solid #FEA55F;
   }
@@ -22,5 +70,9 @@
     color: $nav-font-color;
     text-decoration: none;
     padding: 20px;
+    @media screen and (max-width: 769px) {
+      color: $text-color;
+    }
   }
+
 }

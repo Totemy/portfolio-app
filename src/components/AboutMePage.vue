@@ -26,7 +26,7 @@
           bio
         </div>
         <div class="tab__item"  v-show="showItems[4]" @click="toggleItems(4)">
-          interests
+          my skills
         </div>
         <div class="tab__item"  v-show="showItems[5]" @click="toggleItems(5)">
           education
@@ -52,7 +52,18 @@
         </div>
         <div class="tab__object"  v-show="showItems[4]">
           <p>
-           my interests
+            <br> /**
+            <br> *   //hard skills
+            <br> *   Vue.js
+            <br> *   JavaScript
+            <br> *   Firebase
+            <br> *   HTML
+            <br> *   CSS
+            <br> *   Bootstrap
+            <br> *
+            <br> *   //have experiance with graphic tools:
+            <br> *   Figma
+            <br> *   Adobe Illustrator
           </p>
         </div>
         <div class="tab__object"  v-show="showItems[5]">
