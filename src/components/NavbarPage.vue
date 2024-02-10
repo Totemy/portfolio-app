@@ -35,6 +35,9 @@
           <router-link to="/about"> _about-me</router-link>
         </div>
         <div class="navbar__mobile__item">
+          <router-link to="/projects"> _projects</router-link>
+        </div>
+        <div class="navbar__mobile__item">
           <router-link to="/contact-me">  _contact-me</router-link>
         </div>
       </div>
@@ -53,6 +56,7 @@ export default {
   watch: {
     '$route'(to) {
       this.activeRoute = to.path;
+      this.openBar = false;
     }
   }
 }

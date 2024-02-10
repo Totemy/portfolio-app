@@ -1,5 +1,6 @@
 <template>
   <div class="projects">
+    <h3 class="projects__header">// projects</h3>
     <div class="projects__sidebar">
       <div>
 
@@ -7,6 +8,7 @@
     </div>
     <div>
       <div class="projects__items">
+
         <div class="projects__item">
           <div class="projects__header">
             <h3>E-commerce</h3>
