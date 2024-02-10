@@ -3,6 +3,9 @@
   border-top: solid 1px $stroke;
   bottom: 0px;
   color: $nav-font-color;
+  @media screen and (max-width: 768px){
+    justify-content: space-between;
+  }
   a{
     color: $nav-font-color;
   }
@@ -15,19 +18,26 @@
       border-right: 0;
       border-left: 1px solid $stroke;
     }
+    &__mob{
+      padding: 15px 22px;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
     &-github{
       display: flex;
       padding: 20px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
       &:before{
         display: block;
         content: '';
         background:url('/src/assets/img/github.svg');
         height: 20px;
         width: 20px;
-        top:20px
-        //content: url("src/assets/img/linkedin-fill_white.svg");
+        top:20px;
       }
-
     }
   }
   &__img{
