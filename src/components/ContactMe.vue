@@ -34,7 +34,7 @@
           </div>
           <div>
             <h4>_massage:</h4>
-            <textarea class="contact-me__input"  id="massage"  v-model="massage" name="massage" @input="handleInputChange" rows="4" cols="50" placeholder="Some text"></textarea>
+            <textarea class="contact-me__input"  id="massage"  v-model="massage" name="massage" @input="handleInputChange" rows="4" cols="30" placeholder="Some text"></textarea>
           </div>
           <div class="contact-me__button">
             <button class="btn" @click="sendEmail">submit-message</button>
@@ -45,14 +45,15 @@
             <span style="color: #C98BDF"> const </span> button <span style="color: #C98BDF"> = </span> document.querySelector(<span style="color: #FEA55F">'#sendBtn'</span>); <br/>
             <br/>
             <span style="color: #C98BDF"> const </span> message <span style="color: #C98BDF"> = </span> {<br/>
-            name: <span style="color: #FEA55F"> "{{name}}",</span> <br/>
+            <div style="padding-left: 15px "> name: <span style="color: #FEA55F"> "{{name}}",</span> <br/>
             email: <span style="color: #FEA55F"> "{{email}}"</span> ,<br/>
             message: <span style="color: #FEA55F">"{{massage}}" </span> ,<br/>
             date: <span style="color: #FEA55F">"{{ formatDate(date) }}" </span> <br/>
+            </div>
             }<br/>
             <br/>
             button.addEventListener(<span style="color: #FEA55F"> 'click'</span> , () <span style="color: #C98BDF">=> </span> {<br/>
-            form.send(message);<br/>
+            <span style="padding-left: 15px"> form.send(message);<br/></span>
             })<br/>
           </div>
         </div>

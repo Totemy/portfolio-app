@@ -1,6 +1,9 @@
 .contact-me{
   display: flex;
   height: 100%;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
   &__sidebar{
     border-right: 1px solid $stroke;
     min-width: 240px;
