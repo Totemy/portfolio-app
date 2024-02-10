@@ -33,6 +33,9 @@
         </div>
       </div>
       <div class="tab__objects">
+        <div class="tab__item__mob" v-show="showItems[3]" @click="toggleItems(3)">
+          bio
+        </div>
         <div class="tab__object" v-show="showItems[3]">
           <p>
             As a front-end developer with one year of experience in outsourcing, <br>
@@ -50,6 +53,9 @@
             allowing me to adapt to various project requirements efficiently.<br>
           </p>
         </div>
+        <div class="tab__item__mob"  v-show="showItems[4]" @click="toggleItems(4)">
+          my skills
+        </div>
         <div class="tab__object"  v-show="showItems[4]">
           <p>
             <br> /**
@@ -65,6 +71,9 @@
             <br> *   Figma
             <br> *   Adobe Illustrator
           </p>
+        </div>
+        <div class="tab__item__mob"  v-show="showItems[5]" @click="toggleItems(5)">
+          education
         </div>
         <div class="tab__object"  v-show="showItems[5]">
           <p>
