@@ -4,7 +4,7 @@
       <div @click="toggleItems(1)" class="sidebar__header">personal-info</div>
       <div v-show="showItems[1]"  class="sidebar__items">
         <div @click="toggleItems(3)" class="sidebar__item">bio</div>
-        <div  @click="toggleItems(4)" class="sidebar__item">interests</div>
+        <div  @click="toggleItems(4)" class="sidebar__item">my skills</div>
         <div  @click="toggleItems(5)" class="sidebar__item">education</div>
       </div>
       <div @click="toggleItems(2)"  class="sidebar__header">contacts</div>
@@ -13,10 +13,6 @@
           <div class="sidebar__mail">
             ihor.stryzhov@gmail.com
           </div>
-          <div class="sidebar__phone">
-            +380 98 202 44 17
-          </div>
-
         </div>
      </div>
     </div>
@@ -67,7 +63,7 @@
             <br> *   CSS
             <br> *   Bootstrap
             <br> *
-            <br> *   //have experiance with graphic tools:
+            <br> *   //have experience with graphic tools:
             <br> *   Figma
             <br> *   Adobe Illustrator
           </p>
@@ -79,16 +75,16 @@
           <p>
             Academic History <br>
             <br>
-            JUNIOR SPECIALIST`S DIPLOMA – Drogobych Mechanical
+            JUNIOR SPECIALIST`S DIPLOMA – Drohobych Mechanical
             technological college
             <br>
-            01/09/2014 – 30/05/2018 – Drogobych, Ukraine
+            01/09/2014 – 30/05/2018 – Drohobych, Ukraine
             <br>
             <br>
             BACHELOR`S DIPLOMA – Drohobych Ivan Franko State Pedagogical
             University<br>
             <br>
-            01/09/2018 – 30/06/2020 – Drogobych, Ukraine
+            01/09/2018 – 30/06/2020 – Drohobych, Ukraine
           </p>
         </div>
       </div>

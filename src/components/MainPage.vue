@@ -6,7 +6,7 @@
       <h3 style="color:#4D5BCE"> >Front-end developer</h3>
       <div class="main__text">
         <p>// find my profile on Github:</p>
-        <p> <span style="color: #4D5BCE">const</span>  <span style="color:#43D9AD">githubLink</span>  <span style="color:#FFFFFF">=</span> <a style="color:#E99287" href="https://github.com/Totemy">“https://github.com/Totemy”</a></p>
+        <p> <span style="color: #4D5BCE">const</span>  <span style="color:#43D9AD">githubLink</span>  <span style="color:#FFFFFF">=</span> <a style="color:#E99287" href="https://github.com/Totemy" target="_blank">“https://github.com/Totemy”</a></p>
       </div>
     </div>
     <div class="main__profile">

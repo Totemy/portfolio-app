@@ -30,13 +30,17 @@
       position: absolute;
       top: -234px;
       left: -371px;
-      z-index: -1;
+      z-index: -3;
       background-image: url('/src/assets/img/main/background.png');
       background-repeat: no-repeat;
       background-position: 0, 0;
       background-size: cover;
       width: 1000px;
       height: 1000px;
+
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
   &__img{

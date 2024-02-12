@@ -12,6 +12,7 @@
   &__item{
     padding: 15px 22px;
     border-right: 1px solid $stroke;
+    cursor: pointer;
     &:last-child{
       position: absolute;
       right: 20px;
