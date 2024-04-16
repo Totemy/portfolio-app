@@ -40,20 +40,7 @@
             </div>
           </div>
         </div>
-        <div class="projects__item">
-          <div class="projects__header">
-            <h3>Marketplace</h3>
-          </div>
-          <div class="projects__card-body">
-            <img class="projects__item-img" src="/projects/igora-tv.jpg">
-            <div class="projects__item-body">
-              <p>Small marketplace for selling accounts using api </p>
-              <button class="btn btn-primary" @click="openMarket">
-                view-project
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
