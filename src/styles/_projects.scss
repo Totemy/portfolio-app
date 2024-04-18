@@ -4,9 +4,14 @@
   }
   &__items{
     display: flex;
+    overflow: hidden;
     @media screen and (max-width: 768px) {
       display: block;
     }
+  }
+  &__scroll{
+    overflow: scroll; /* Активуємо смугу прокрутки */
+    animation: scrollBlink 1s infinite;
   }
   &__item{
     margin: 50px;

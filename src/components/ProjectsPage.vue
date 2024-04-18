@@ -8,7 +8,6 @@
     </div>
     <div>
       <div class="projects__items">
-
         <div class="projects__item">
           <div class="projects__header">
             <h3>E-commerce</h3>
@@ -40,7 +39,23 @@
             </div>
           </div>
         </div>
+        <div class="projects__item">
+          <div class="projects__header">
+            <h3>dashboard</h3>
+          </div>
+          <div class="projects__card-body">
+            <div>
+              <img class="projects__item-img" src="/projects/dashboard.jpg">
+            </div>
 
+            <div class="projects__item-body">
+              <p>This is one of the pages that is designed specifically for pixel perfect display, it also has a mobile version of itself</p>
+              <button class="btn btn-primary" @click="openDash">
+                view-project
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
